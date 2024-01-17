@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Serve static files from the build folder
-app.use(express.static(path.resolve(__dirname, '../client/dist')));
+app.use(express.static(path.resolve(__dirname, '../../client/ave-trans/dist')));
 
 // Define a route that always serves your index.html
 app.get('*', (req, res) => {
